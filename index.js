@@ -1,6 +1,9 @@
 // modify to include dotenv package
 require('dotenv').config()
 
+const multer = require("multer");
+const upload = multer();
+
 // Add required packages
 const express = require("express");
 const app = express();
@@ -47,3 +50,4 @@ app.get("/", (req, res) => {
         });
     });
 });
+
